@@ -9,6 +9,7 @@ module Elm.Encoder
 import           Control.Monad.Reader
 import           Data.Text
 import           Elm.Common
+import           Control.Applicative
 import           Elm.Type
 import           Formatting
 

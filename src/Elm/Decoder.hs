@@ -13,6 +13,7 @@ module Elm.Decoder
 
 import           Control.Monad.Reader
 import           Data.Text
+import           Control.Applicative
 import           Elm.Common
 import           Elm.Type
 import           Formatting

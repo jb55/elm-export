@@ -47,6 +47,7 @@ test-suite elm-export-test
                      , containers
                      , elm-export
                      , hspec
+                     , hspec-discover
                      , hspec-core
                      , quickcheck-instances
                      , text

@@ -9,9 +9,12 @@ module Elm.Encoder
 import           Control.Monad.Reader
 import           Data.Text
 import           Elm.Common
-import           Control.Applicative
 import           Elm.Type
 import           Formatting
+
+#if !MIN_VERSION_base(4,8,0)
+import Control.Applicative
+#endif
 
 class HasEncoder a where
   render :: a -> Reader Options Text

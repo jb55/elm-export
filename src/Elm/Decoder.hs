@@ -13,10 +13,13 @@ module Elm.Decoder
 
 import           Control.Monad.Reader
 import           Data.Text
-import           Control.Applicative
 import           Elm.Common
 import           Elm.Type
 import           Formatting
+
+#if !MIN_VERSION_base(4,8,0)
+import Control.Applicative
+#endif
 
 class HasDecoder a where
   render :: a -> Reader Options Text

@@ -41,13 +41,15 @@ test-suite elm-export-test
   main-is:             Spec.hs
   other-modules:       ExportSpec
                      , TypesSpec
+  build-tools:         hspec-discover
   build-depends:       QuickCheck
                      , base
                      , bytestring
                      , containers
                      , elm-export
-                     , hspec >= 1.8
+                     , hspec
                      , hspec-core
+                     , hspec-discover
                      , quickcheck-instances
                      , text
                      , time

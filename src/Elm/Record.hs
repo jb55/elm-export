@@ -1,4 +1,6 @@
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE OverloadedStrings #-}
+
 module Elm.Record
   ( toElmTypeRef
   , toElmTypeRefWith

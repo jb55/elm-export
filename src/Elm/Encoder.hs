@@ -1,4 +1,6 @@
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE OverloadedStrings #-}
+
 module Elm.Encoder
   ( toElmEncoderRef
   , toElmEncoderRefWith
